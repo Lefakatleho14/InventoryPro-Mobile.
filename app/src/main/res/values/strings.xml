@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">InventoryPro</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="products">Products</string>
+    <string name="sales">Sales</string>
+    <string name="reports">Reports</string>
+    <string name="settings">Settings</string>
+    <string name="add_product">Add Product</string>
+    <string name="edit_product">Edit Product</string>
+    <string name="record_sale">Record Sale</string>
+    <string name="low_stock_alert">Low Stock Alert</string>
+    <string name="total_inventory_value">Total Inventory Value</string>
+    <string name="company_name">Durban Small Business Supplies</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="search">Search products...</string>
+    <string name="default_web_client_id">665239860394-8lm1pfirj5bnofsccfl8nb5fr6pj6ej3.apps.googleusercontent.com</string>
+</resources>
