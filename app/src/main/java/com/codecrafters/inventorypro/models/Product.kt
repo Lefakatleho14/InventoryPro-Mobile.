@@ -18,8 +18,8 @@ data class Product(
         get() = quantityInStock * unitPrice
 
     val formattedPrice: String
-        get() = "R %.2f".format(unitPrice)
+        get() = "R %.2f".format(java.util.Locale.US, unitPrice)
 
     val formattedStockValue: String
-        get() = "R %.2f".format(stockValue)
+        get() = "R %.2f".format(java.util.Locale.US, stockValue)
 }

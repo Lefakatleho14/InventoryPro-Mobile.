@@ -12,8 +12,8 @@ data class Sale(
     val userRole: String = ""
 ) {
     val formattedTotal: String
-        get() = "R %.2f".format(totalPrice)
+        get() = "R %.2f".format(java.util.Locale.US, totalPrice)
 
     val formattedUnitPrice: String
-        get() = "R %.2f".format(unitPrice)
+        get() = "R %.2f".format(java.util.Locale.US, unitPrice)
 }

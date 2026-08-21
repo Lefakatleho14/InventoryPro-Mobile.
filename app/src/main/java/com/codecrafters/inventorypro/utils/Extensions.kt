@@ -44,4 +44,4 @@ fun getCurrentDateTime(): String {
 }
 
 // Format currency
-fun Double.toRand(): String = "R %.2f".format(this)
+fun Double.toRand(): String = "R %.2f".format(java.util.Locale.US, this)
