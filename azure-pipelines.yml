@@ -8,14 +8,14 @@ steps:
 - task: Gradle@3
   displayName: 'Run Android Unit Tests'
   inputs:
-    gradleWrapperFile: 'gradlew'
+    gradleWrapperFile: 'gradlew.bat'  # <--- CHANGE THIS LINE
     tasks: 'test'
     publishTestResults: true
 
 - task: Gradle@3
   displayName: 'Build Debug APK'
   inputs:
-    gradleWrapperFile: 'gradlew'
+    gradleWrapperFile: 'gradlew.bat'  # <--- CHANGE THIS LINE
     tasks: 'assembleDebug'
 
 - task: PublishBuildArtifacts@1
