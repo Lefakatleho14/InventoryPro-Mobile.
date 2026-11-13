@@ -1,0 +1,29 @@
+trigger:
+  - main
+
+pool:
+  name: 'Default'
+
+variables:
+  ANDROID_HOME: 'C:\Users\katleho\AppData\Local\Android\Sdk'
+  ANDROID_SDK_ROOT: 'C:\Users\katleho\AppData\Local\Android\Sdk'
+
+steps:
+- task: Gradle@3
+  displayName: 'Run Android Unit Tests'
+  inputs:
+    gradleWrapperFile: 'gradlew.bat'
+    tasks: 'test'
+    publishTestResults: true
+
+- task: Gradle@3
+  displayName: 'Build Debug APK'
+  inputs:
+    gradleWrapperFile: 'gradlew.bat'
+    tasks: 'assembleDebug'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish APK Artifact'
+  inputs:
+    PathtoPublish: 'app/build/outputs/apk/debug/app-debug.apk'
+    ArtifactName: 'drop'
